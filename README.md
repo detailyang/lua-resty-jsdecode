@@ -4,7 +4,7 @@
 Table of Contents
 -----------------
 * [Status](#status)
-* [Install](#install)
+* [Compile](#compile)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Author](#author)
@@ -16,12 +16,11 @@ Status
 
 Production Ready
 
-Install
+Compile
 =======
 
 ```bash
 make;
-copy libjscode.so to your lua package so path
 ```
 
 Usage
