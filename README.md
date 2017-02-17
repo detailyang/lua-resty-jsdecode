@@ -1,5 +1,5 @@
 # lua-resty-jsdecode
-[Javascript Escape Notation Decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) with the Luajit ffi binding
+[Javascript Escape Notation Decode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) To UTF-8 Bytes with the Luajit ffi binding
 
 Table of Contents
 -----------------
