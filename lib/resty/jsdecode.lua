@@ -11,7 +11,7 @@ ffi.cdef[[
 
 
 local _M = {
-    _VERSION = 0.1.0
+    _VERSION = "0.1.0"
 }
 local ok, tab_new = pcall(require, "table.new")
 if not ok then

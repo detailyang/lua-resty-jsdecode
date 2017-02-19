@@ -2,3 +2,4 @@
 *.o
 *.dylib
 runtest
+lua-resty-jsdecode-*
