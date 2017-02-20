@@ -14,6 +14,7 @@ expect(char *ex, size_t ex_len, char *src, size_t len)
     size_t dst_len = jsdecode(dst, src, len);
     
     if (ex_len != dst_len) {
+        printf("\"%s\" do not pass\n", src);
         exit(1);
     }
     
@@ -80,5 +81,23 @@ main() {
     char e15[] = { 38, 108, 116, 59, 105, 109, 103, 32, 115, 114, 99, 61, 38, 113, 117, 111, 116, 59, 120, 120, 38, 113, 117, 111, 116, 59, 32, 47, 38, 103, 116, 59 };
     expect(e15, 32, "\\u0026\\u006c\\u0074\\u003b\\u0069\\u006d\\u0067\\u0020\\u0073\\u0072\\u0063\\u003d\\u0026\\u0071\\u0075\\u006f\\u0074\\u003b\\u0078\\u0078\\u0026\\u0071\\u0075\\u006f\\u0074\\u003b\\u0020\\u002f\\u0026\\u0067\\u0074\\u003b", 192);
     
+    char ea[] = {83};
+    expect(ea, 1, "\\123", 4);
+
+    char eb[] = {169};
+    expect(eb, 1, "\\251", 4);
+
+    char ec[] = {1};
+    expect(ec, 1, "\\1", 2);
+
+    char ed[] = {0};
+    expect(ed, 1, "\\0", 2);
+
+    char ee[] = {92, 52};
+    expect(ee, 2, "\\4", 2);
+
+    char ef[] = {92, 52, 56};
+    expect(ef, 3, "\\48", 3);
+
     return 0;
 }
