@@ -38,6 +38,7 @@ Todo
 =====
 * Hexadecimal escape sequences
 * Latin-1 character
+* Control escape sequences
 
 Contributing
 ------------
