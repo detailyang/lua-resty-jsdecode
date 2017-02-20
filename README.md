@@ -6,6 +6,7 @@ Table of Contents
 * [Status](#status)
 * [Compile](#compile)
 * [Usage](#usage)
+* [Todo](#todo)
 * [Contributing](#contributing)
 * [Author](#author)
 * [License](#license)
@@ -32,6 +33,11 @@ local jsdecoder = jsdecode.new()
 
 jsdecoder.decode("\\u0062\\u006f\\u006f\\u006d") #boom
 ```
+
+Todo
+=====
+* Hexadecimal escape sequences
+* Latin-1 character
 
 Contributing
 ------------
