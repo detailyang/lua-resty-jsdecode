@@ -236,6 +236,20 @@ jsdecode(char *dst, const char *src,  size_t src_len)
 
                         break;
 
+                    case 'x':
+                        /* peek two bytes */
+                        if (i + 2 < src_len) {
+                            if (IS_HEX(src[i+1]) && IS_HEX(src[i+2])) {
+                                *dp++ = AXTOI(src[i+1]) * 16 + AXTOI(src[i+2]);
+                                i += 2;
+                                break;
+                            }
+                        }
+
+                        *dp++ = '\\';
+                        *dp++ = src[i];
+                        break;
+
                     default:
                         *dp++ = '\\';
                         *dp++ = src[i];
