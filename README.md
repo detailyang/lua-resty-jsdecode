@@ -36,7 +36,6 @@ jsdecoder.decode("\\u0062\\u006f\\u006f\\u006d") #boom
 
 Todo
 =====
-* Hexadecimal escape sequences
 * Latin-1 character
 * Control escape sequences
 
